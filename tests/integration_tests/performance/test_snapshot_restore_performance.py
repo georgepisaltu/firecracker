@@ -211,7 +211,7 @@ def consume_output(cons, result):
         cons.consume_data(RESTORE_LATENCY, value)
 
 
-@pytest.mark.nonci
+#@pytest.mark.nonci
 @pytest.mark.timeout(300 * 1000)  # 1.40 hours
 def test_snap_restore_performance(bin_cloner_path, results_file_dumper):
     """Test the performance of snapshot restore."""
